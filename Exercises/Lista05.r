@@ -134,7 +134,7 @@ q2 <- function(qP,qV,qI,days,Ns=1000) {
     
     retEst<-vector(length = days)
     valEndDay<-vector(length = Ns)
-    mn <- getCovMatrix()
+    mn <- getCovMatrix(Ns)
     
     for(j in 1:Ns){
         print(j)
